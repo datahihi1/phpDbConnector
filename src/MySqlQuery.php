@@ -88,7 +88,7 @@ class MySqlQuery extends Query
     }
 
     // JOIN clause
-    public function join(string $table, string $type = 'INNER')
+    public function join(string $table, string $type = '')
     {
         $this->joinClause .= " {$type} JOIN {$table}";
         return $this;
