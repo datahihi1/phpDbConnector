@@ -1,0 +1,34 @@
+
+// class SqliteQuery extends Query {
+//     public $connection;
+//     public $query;
+
+//     protected function connect() {
+//         // Connect to SQLite database
+//         $this->connection = new SQLite3("mydatabase.db");
+//         return $this->connection;
+//     }
+
+//     protected function select($query) {
+//         $this->query = $query;
+//         $result = $this->connection->query($query);
+//         if ($result) {
+//             // Process the result set
+//             while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+//                 // You can return or handle rows as needed
+//                 print_r($row); // Example of processing the result
+//             }
+//         } else {
+//             echo "Error: " . $this->connection->lastErrorMsg();
+//         }
+//     }
+// }
+
+// // Usage example:
+// $mysqlQuery = new MySqlQuery();
+// $mysqlQuery->connect();
+// $mysqlQuery->select("SELECT * FROM users");
+
+// $sqliteQuery = new SqliteQuery();
+// $sqliteQuery->connect();
+// $sqliteQuery->select("SELECT * FROM users");

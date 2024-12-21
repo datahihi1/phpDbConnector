@@ -1,0 +1,15 @@
+{
+    "name": "datduy/php-db-connector",
+    "autoload": {
+        "psr-4": {
+            "Datahihi1\\PhpDbConnector\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "datahihi1",
+            "email": "datahihi1100@gmail.com"
+        }
+    ],
+    "require": {}
+}
