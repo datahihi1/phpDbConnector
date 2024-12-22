@@ -83,7 +83,11 @@ class MySqlQuery extends Query
     }
     public function limit(int $count = 1)
     {
-        $this->query .= " LIMIT {$count}";
+        if($this->whereClause){
+            $this->whereClause .= " LIMIT {$count}";
+        }else{
+            $this->query .= " LIMIT {$count}";
+        }
         return $this;
     }
 
